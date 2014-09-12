@@ -5,14 +5,41 @@
     <script src="Scripts/require.js" data-main="app"></script>
     <link href="Content/bootstrap.css" rel="stylesheet" />
 </head>
-<body>
+<body class="container">
     <h1>The Web Of The Future - Knockout Components</h1>
+    <p>Yo! Here are some examples of using knockout components! Enjoy!</p>
     <!-- component with hardcoded template -->
+    <everything-is-awesome></everything-is-awesome>
+    
     <!-- component with template by id -->
+    <thank-god-it-is-friday></thank-god-it-is-friday>
     <!-- component with template and view model-->
+    <awesome-youtube-player></awesome-youtube-player>
     <!-- component with template and view model via require -->
+    <crazy-ass-game></crazy-ass-game>
     <!-- component that uses custom loader-->
     <hello-world></hello-world>
+    
+    
+    
+    
+   <!-- some templates -->
+    <script id="thank-god-it-is-friday-template" type="text/html">
+        <h2>#2. &lt;thank-god-it-is-friday&gt;</h2>
+        <iframe width="560" height="315" src="//www.youtube.com/embed/kfVsfOSbJY0" frameborder="0" allowfullscreen></iframe>
+    </script>
 
+
+    <script id="awesome-youtube-player-template" type="text/html">
+        <h2>#3. &lt;awesome-youtube-player-template&gt;</h2>
+        <form>
+            <label>Set video ID Douuugh!!</label>
+            <input data-bind="value: hash" />
+            <label><small>another cool video for testing: M8pR1rZZHEs</small></label>
+        </form>
+        <!-- ko if: videoSrc -->
+            <iframe width="560" height="315" data-bind="attr: {src: videoSrc }" frameborder="0" allowfullscreen></iframe>
+        <!-- /ko -->
+    </script>
 </body>
 </html>

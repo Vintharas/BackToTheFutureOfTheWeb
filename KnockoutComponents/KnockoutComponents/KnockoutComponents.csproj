@@ -60,6 +60,7 @@
     <Content Include="app.js" />
     <Content Include="app\main.js" />
     <Content Include="app\viewModels\hello-world.js" />
+    <Content Include="app\views\crazy-game.html" />
     <Content Include="app\views\hello-world.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
